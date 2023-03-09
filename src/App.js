@@ -1,6 +1,7 @@
 import ReactPDF, { PDFDownloadLink, PDFViewer } from "@react-pdf/renderer";
 import { useState, useEffect } from "react";
 import ResumeGenerator from "./components/ResumeGenerator";
+import Resume from "./components/Resume";
 
 function App() {
   const [showPDF, setShowPDF] = useState(true);
