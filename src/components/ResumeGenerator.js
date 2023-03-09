@@ -28,22 +28,25 @@ const styles = StyleSheet.create({
   },
 });
 
-const ResumeGenerator = ({ name, email, phone, summary }) => {
+const ResumeGenerator = ({ personalData, academicData, workData, certificatesData }) => {
   return (
     <Document>
       <Page style={styles.page}>
-        <Text style={styles.title}>Resume</Text>
+        <Text style={styles.title}>personal Information</Text>
         <Text style={styles.section}>
-          <Text style={styles.label}>Name:</Text>
-          <Text style={styles.value}>{name}</Text>
-          <Text style={styles.label}>Email:</Text>
-          <Text style={styles.value}>{email}</Text>
-          <Text style={styles.label}>Phone:</Text>
-          <Text style={styles.value}>{phone}</Text>
+          <Text style={styles.label}>First Name:</Text>
+          <Text style={styles.value}>{personalData.firstName}</Text>
+          <Text style={styles.label}>LastName:</Text>
+          <Text style={styles.value}>{personalData.lastName}</Text>
+          <Text style={styles.label}>Date Of Birth:</Text>
+          <Text style={styles.value}>{personalData.dateOfBirth}</Text>
+          <Text style={styles.label}>Gender:</Text>
+          <Text style={styles.value}>{personalData.gender}</Text>
+
           </Text>
         <Text style={styles.section}>
           <Text style={styles.label}>Summary:</Text>
-          <Text style={styles.value}>{summary}</Text>
+          <Text style={styles.value}>{}</Text>
         </Text>
       </Page>
     </Document>
