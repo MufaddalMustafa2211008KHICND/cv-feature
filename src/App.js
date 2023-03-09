@@ -30,7 +30,7 @@ function App() {
     fetch(url)
       .then(async (response) => {
         const data = await response.json()
-        console.log(data)
+        // console.log(data)
         setData(data)
       })
       .catch((error) => {
@@ -46,7 +46,7 @@ function App() {
     fetchData(certificatesInfoUrl, setCertificatesData)
 
   }, []);
-  console.log(personalData);
+  console.log(certificatesData);
 
   return (
     <div className="App">
@@ -84,6 +84,7 @@ function App() {
               personalData={personalData}
               academicData={academicData}
               workData={workData}
+              skillsData={skillsData}
               certificatesData={certificatesData}
             />
           }
