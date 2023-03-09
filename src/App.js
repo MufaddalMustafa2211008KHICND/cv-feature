@@ -48,9 +48,6 @@ function App() {
   }, []);
   console.log(personalData);
 
-  const handleGeneratePDF = () => {
-    setShowPDF(true);
-  };
   return (
     <div className="App">
         {/* <div>
